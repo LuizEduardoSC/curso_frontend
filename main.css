@@ -1,0 +1,117 @@
+* { /* Definir um estilo a tudo que não tiver um estilo especificado */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body > header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+} 
+
+header li {
+    display: inline; /* Ajustar os itens da lista (inline = lado a lado na mesma linha) (block = em blocos um abaixo do outro) */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px; /* Adicionar margem a esquerda */
+    
+}
+
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+.container { /* Serve para ajustar o site de acordo com o tamanho da tela */
+    width: 1366px; /* Resolução da tela de um notebook padrão */
+    margin: 0 auto 0 auto; /* "margin" Serve para centralizar o elemento (Começa sempre para cima, direita, baixo, esquerda) */
+}
+
+.articles { /* " . " Serve para todos os itens definidos com "class" */
+    display: flex; /* Serve para ajustar automaticamente o layout da página */
+    flex-wrap: wrap; /* Serve para quando acabar o espaço definido ele pular para a outra linha */
+    justify-content: space-between; /* justify-content = Distribuir o espaço de forma igualitária entre os itens(space-between = dar espaõ entre cada item) */
+}   
+
+.articles article img {
+    /* height: 180px; */ /* height = Limita a altura máxima da imagem (A largura se adequa pra manter a proporção) */
+    width: 100%;  /* Serve para definir a largura da imagem */
+}
+
+.articles article {
+    width: 30%; /* width = Serve para limitar a largura de cada item ná página (Quantos itens irão aparecer de um canto a outro)  */
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none; /* Serve para remover ou adicionar decorações na palavra (none = nada / underline = linha abaixo da palavra)*/
+    font-weight: bold; /* Serve para de ixar a letra em negrito */
+    margin-top: 8px;
+}
+
+.articles article a:hover { /* Serve para adicionar um efeito de transição ao passar o mouse */
+    text-decoration: underline; /* Serve para remover ou adicionar decorações na palavra (underline = linha abaixo da palavra)*/
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif; /* Serve para mudar a fonte */
+}
+
+.articles article h3 {
+    font-size: 24px; /* Serve para alterar o tamanho da fonte */
+}
+
+section h2 {
+    font-size: 32px; /* Serve para alterar o tamanho da fonte */
+}
+
+#sports { /* # Serve para modificar todos os itens definidos como "id" */
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .articles article a {
+    background-color: #009432;
+}
+
+#economy {
+    background-color: #f8f59f;
+
+}
+
+#entertainment {
+    background-color: #f2a384;
+
+}
+
+#technology {
+    background-color: #85bef4;
+
+}
+
+
+
